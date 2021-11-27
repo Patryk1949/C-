@@ -1,0 +1,135 @@
+COMPILATION STEPS:
+(text input) -> Tokenizer: (tokens) -> Parser: (nodes in polish notation) -> Builder: (LLIR code) -> CodeGenerator: (binary code)
+
+INCLUDE STRUCTURE:
+Utils -> Containers -> CompUtils -> Errors -> Tokenizer -> ExprParser -> MainParser -> Classes -> Builder
+
+
+
+KEYWORDS:
+	if, else, while, for, goto, return,
+	fn, struct, union, enum, class
+	typeof, bytesize, exists
+	namespace,
+	const, mut, static
+
+LOCAL KEYWORDS:
+	main
+
+BINARY OPERATORS:
+?: =   +=  -=  *=  /=  %=  ^^= |=  &=  ^=  <<= >>=
+==  !=  <   >   <=  >=  ||  &&  +   -   *   /   %   ^^  |   &   ^   <<  >>
+.   ->
+
+UNARY PREFIX OPERATORS:
+* & + - ! ~
+
+UNARY POSTFIX OPERATORS:
+++ -- () []
+
+CALLED OPEARATORS:
+typeof bytesize exists
+
+
+BASIC CONCRETE TYPES:
+	Void,
+	B8, B16, B32, B64,
+	I8, I16, I32, I64,
+	U8, U16, U32, U64,
+	F32, F64, F128
+	Char, Bool
+
+BASIC UNCONCRETE TYPES:
+	Pointer, Array, (Function)
+
+BASIC ALIASES:
+	Byte : B8,
+	Int : I32,
+	UInt : U32,
+	Float : F32,
+	Double : F64
+
+NAMES CAN REFER TO:
+	variables,
+	functions,
+	types:
+		unions, enums, structs, basic types
+	namespaces,
+	literals,
+	labels
+
+NAMES OF STANDARD FUNCTIONS:
+	size, begin, end, cbegin, cend,
+	valueType,
+
+STANDARD UNCONCRETE TYPES:
+	Integral, FloatingPoint, Aritmetic, Signed
+
+SANDARD STATIC VARIABLES:
+	Null, True, False
+
+STANDARD COMPILER FUNCTIONS
+	hasMember(class), memberCount(class), memberType<class, index>,
+	
+	exists(identifier, class), exists(identifier, class, Namespace),
+
+	getMember(auto, index), 
+
+STANDARD TEMPLATE VARAIBLES:
+	Pi, Euler, MinVal, MaxVal, Inf, Zero, One, NegOne, NaN
+
+STANDARD TEMPLATE ALIASES
+	ValType, ItType 
+
+
+GENERAL FUNCTIONS:
+move, swap,
+begin, end, cbegin, cend, size, front, back,
+pushFront, pushBack, emplaceFornt, emplaceBack,
+
+succ, pred,
+
+
+
+
+
+
+x := y;				0
+x : T;				1
+x : T = y;			2
+x :{}= y;			3
+x : T{} = y			4
+x : T{1, 2, 3};	5 + n
+
+
+
+do i:=0;{ #defer i++;
+
+	
+} while i != 10{
+	
+}
+
+
+#defer i++;
+
+
+do { i++; } while i!=10{ 
+	printf(arr[i], ' ');
+
+
+while i!=10{
+	printf(arr[i], ' ')
+}
+
+
+alloc(43, 43, allocator)
+free(das, allocator)
+fn sort(rang : pointerOf(??)){
+	T :class = typeof(rang);
+}
+
+
+fn tochars(x : ?T isContainer(T)}) result *: ?RT isContainer(RT){
+
+}

@@ -1,0 +1,42 @@
+
+
+
+if (condition) ==
+case dsdadas{
+
+} case fsdfsdfds{
+
+} gotonext;
+case rerere{
+
+} else{
+	
+}
+
+
+Bool warunek = True;
+?? warunek = True;
+warunek := True;
+
+
+
+fn begin(&DArray(T=??) arr) -> &DArray(T){
+	return arr.begin;
+}
+fn begin(&const DArray(T=??) arr) -> &const DArray(T){
+	return arr.begin;
+}
+fn cbegin(&const DArray(T=??) arr) -> &const DArray(T){
+	return arr.begin;
+}
+
+
+
+fn funkcja(&const DArray(Double) src, &DArray(double) dest) *-> &Int{
+
+}
+
+zmienna <=: 
+
+
+> dassfsdfsd >

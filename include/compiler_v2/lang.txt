@@ -1,0 +1,22 @@
+function:
+
+fn !{1, 2} ~{2, 3} funkcja(x : |I32, y : *|I32, name : String){
+	return 1;
+}
+
+!{1, 2}  - arguments 1 and 2 cannot point to the same memory
+~{2, 3}  - arguments 2 and 3 commute
+
+
+Special Classes:
+class:
+	class type
+Null:
+	null type
+tuple:
+	[[Int, Int, Float]]  - tuple containing three types, tuple doesn't guarantee alignment in memory, it cannot be referenced
+
+
+*  - pointer
+^  - pointer to a constant
+&  - argument passer, acts like a immutable variable, in reality it is either a pointer to a constant or a variable

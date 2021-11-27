@@ -1,0 +1,13 @@
+TODO LIST:
+
+1.		for loops
+2. 	switch statements
+2.		type deduction
+3.		some kind of iterators
+
+4.		inner product operator: <>, <[21]>, <{x*y + ...}>, <[-Inf(F64)]{max(x+y, ...)}>
+5.		outer product operator: ><, >[captures_like_in_lambda]<
+6.		last index shortcut |}
+7.		range slicing range[0 : |}-1]
+
+fn (a + b) + (c + d);
