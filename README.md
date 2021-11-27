@@ -1,5 +1,5 @@
 # C-plus-plus
-C++ programs that are compliled as single module.
+C++ programs that are compliled as a single module.
 For simplicity they are contained in one file system.
 
 Almost none of the fiels from "include" directory is finished.
